@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //pass callbackfunction in another function
+    function myfun()
+    {
+        console.log("hii");
+    }
+    function sum(myfun)
+    {
+        return myfun;
+    }
+    
+    // forEach loop for callbackFunction  
+    //no need to call forEach it automatically call and print
+    let arr=[10,20,30,40];
+    arr.forEach(function print(val)
+    {
+        console.log(val)
+    })
+
+    //generally in forEach we call with arrow function
+    let arr1=["Delhi","Mumbai","Pune"]
+    arr1.forEach((val)=>
+    {
+        console.log(val.toUpperCase()) //we can we function in it
+    })
+
+    //3 parameter in forEach it can be optional
+    arr1.forEach((val,index,arr1)=>
+    {
+        console.log(val,"\t",index,"\t",arr1)
+    });
+
+    //2nd way to pass arrrow funtion as parameter
+    arr=[10,20,30,40];
+    let calSquare=(num)=>
+    {
+        console.log(num*num);
+    }
+    arr.forEach(calSquare);
+</script>
+</html>

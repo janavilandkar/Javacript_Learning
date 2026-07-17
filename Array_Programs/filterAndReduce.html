@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // filter function
+    //give new array base on any condition
+    let arr=[1,2,3,4,5,6,7,8];
+    let newArr=arr.filter((val)=>
+    {
+        if(val%2===0)
+        {
+            return val;
+        }
+    })
+    console.log(newArr);
+
+    // reduce function
+    // perform some operation on array and only 1 value
+    let arr1=[1,2,3,4,5];
+    let sumEle=arr1.reduce((result,current)=>
+    {
+        return result+current;       //rusult=result+current
+    })
+    console.log(sumEle);   //1+2+3+4+5;
+</script>
+</html>

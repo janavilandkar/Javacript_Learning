@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //for same life forEach but in forEach that work on same array but in map it create different array
+    let arr=[1,2,3,4,5];
+    let newArr=arr.map((val)=>
+    {
+        return val**2;      //return the square of num 
+    });
+    console.log(newArr);
+
+    //to print value using mao
+    arr.map((val)=>
+    {
+        console.log(val);
+    })
+
+    //creating new array with returning value from old array
+    let newArray=arr.map((val)=>
+    {
+        return val;
+    })
+    console.log(newArray)
+</script>
+</html>
