@@ -9,12 +9,14 @@
 </body>
 
 <script>
-    for(let i=1;i<=100;i++)
+    let marks=[70,80,90,95,40,98,60];
+    let topper=marks.filter((val)=>
     {
-        if(i%2==0)
+        if(val>=90)
         {
-            console.log(i)
+            return val;
         }
-    }
+    })
+    console.log(topper);
 </script>
 </html>

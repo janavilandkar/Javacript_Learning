@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+<script>
+    let str = "Enginerring";
+    let vcount = 0, ccount = 0;
+    const count = () => {
+        for (let i of str) {
+            if (i === 'a' || i === 'e' || i === 'i' || i === 'o' || i === 'u' || i === 'A' || i === 'E' || i === 'I' || i === 'O' || i === 'U') 
+            {
+                vcount++;
+            }
+            else {
+                ccount++;
+            }
+        }
+        return vcount, ccount;
+    }
+    count();
+    console.log("vowel count = " + vcount);
+    console.log("consonant count = " + ccount);
+</script>
+
+</html>
