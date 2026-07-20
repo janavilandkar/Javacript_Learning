@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+
+<script>
+    let fruits=["Apple","Banana","Orange","Papaya"];
+    console.log(fruits.length);
+    console.log(fruits[0]);
+
+    //add to last of array
+    fruits.push("Graphes");
+    console.log("push =",fruits);
+
+    //delete to last from array
+    let del=fruits.pop();
+    console.log("delete item =",del);
+    console.log("pop =",fruits);
+
+    //add to start of array
+    fruits.unshift("Mango");
+    console.log("unshift =",fruits);
+
+    //delete to last from array
+    del=fruits.shift();
+    console.log("shift =",fruits)
+
+    //convert array to string
+    let arr=[1,2,3,4,5];
+    let str=arr.toString();  
+    console.log("toString for int =",str);
+
+    let f2=fruits.toString();
+    console.log("toString for String =",f2);
+
+    //concat arrays
+    let a=['a','b','c','d','e'];
+    let concatArr=a.concat(fruits,arr);
+    console.log("Concat =",concatArr);
+
+    //slice 
+    let arr2=a.slice(1,4);
+    console.log("slice =",arr2);
+
+    //splice method (start,delcount,ele1..)
+    let arr3=[1,2,3,4,5,,6,7];
+    
+</script>
+</html>
